@@ -35,11 +35,10 @@ risk_free_rate = 0.05
 assets = (stocks_df,ETF_df,FX_df,CRYPTO_df)
 
 
-stocks_df.dropna()
-FX_df.dropna()
-ETF_df.dropna()
-CRYPTO_df.dropna()
-
+stocks_df = stocks_df.dropna()
+FX_df = FX_df.dropna()
+ETF_df = ETF_df.dropna()
+CRYPTO_df = CRYPTO_df.dropna()
 
 
 
