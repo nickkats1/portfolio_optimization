@@ -119,7 +119,7 @@ portfolio_optimization(assets)
 ### all portfolio's combined
 
 df = pd.concat(assets,axis=1,keys=["stocks","ETFs","FX","Crypto"])
-df.dropna(inplace=True)
+df = df.dropna()
 
 
 
